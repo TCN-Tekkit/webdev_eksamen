@@ -1,1 +1,8 @@
 @use "variables" as *;
+
+main, aside {
+    font-family: $mainfont;
+}
+header, footer {
+    font-family: $secondaryfont;
+}
