@@ -11,26 +11,33 @@
     </head>
     <body>
         <header id="top">
-            <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
             <nav>
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
                 <form>
                     <label for="search">Søk</label>
                     <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
                     <input type="submit" value="søk">
                 </form>
-                <ul id="menu"> 
+                <section id="menu">
+                <ul class="menu"> 
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="index.html#product">Produkter</a></li>
                     <li><a id="logo">Logo</a></li>
                     <li><a href="index.html#kategorier">Kategorier</a></li>
                     <li><a href="#bunn">Kontakt oss</a></li>
                 </ul>
+                <span id="ikoner" class="menu">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+                </section>
             </nav>
         </header>
         <main>
             <section id="banner">
-                <h2>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h2>
-                <p>Aenean ut nisi consequat, pulvinar libero id, posuere mi. Vestibulum eu tincidunt erat, at imperdiet magna. Aliquam pulvinar nisl nec tellus euismod, non ullamcorper nunc venenatis. Vestibulum condimentum non sapien nec ultrices. Quisque a ex ullamcorper neque elementum semper ac sit amet dui.</p>
+                <h2>Orci varius natoque penatibus.</h2>
+                <p>Aenean ut nisi consequat, pulvinar libero id, posuere mi. Vestibulum eu tincidunt erat, at imperdiet magna.</p>
                 <button id="bknapp">Les mer</button>
             </section>
             <section id="product">
@@ -47,7 +54,7 @@
                     <label for="best" class="button">Best Sellers</label>
                 </section>
             </section>
-            <section class="flex_spaceb">
+            <section class="flex_product">
                 <h2>Produkter</h2>
                 <article class="product_card">
                     <picture>
@@ -56,6 +63,14 @@
                     </picture>
                     <a href="product.html">Product name</a>
                     <p>1299 kr</p>
+                    <article class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>842 Reviews</p>
+                    </article>
                 </article>
                 <article class="product_card">
                     <picture>
@@ -64,6 +79,14 @@
                     </picture>
                     <a href="product.html">Product name</a>
                     <p>1299 kr</p>
+                    <article class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>842 Reviews</p>
+                    </article>
                 </article>                
                 <article class="product_card">
                     <picture>
@@ -72,6 +95,14 @@
                     </picture>
                     <a href="product.html">Product name</a>
                     <p>1299 kr</p>
+                    <article class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>842 Reviews</p>
+                    </article>
                 </article>                
                 <article class="product_card">
                     <picture>
@@ -80,6 +111,14 @@
                     </picture>
                     <a href="product.html">Product name</a>
                     <p>1299 kr</p>
+                    <article class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>842 Reviews</p>
+                    </article>
                 </article>                
                 <article class="product_card">
                     <picture>
@@ -88,6 +127,14 @@
                     </picture>
                     <a href="product.html">Product name</a>
                     <p>1299 kr</p>
+                    <article class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>842 Reviews</p>
+                    </article>
                 </article>                
                 <article class="product_card">
                     <picture>
@@ -96,48 +143,42 @@
                     </picture>
                     <a href="product.html">Product name</a>
                     <p>1299 kr</p>
+                    <article class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>842 Reviews</p>
+                    </article>
                 </article>
             </section>
             <section>
                 <h2>Våre mest populære kategorier</h2>
                 <ul class="kategorier">
                     <li id="grid1">
-                        <picture>
-                            <source media="(max-width:800px)" srcset="img/category1small.jpg">
-                            <img src="img/category1large.jpg" alt="bilde av katergori 1 katter"> <!-- Image by <a href="https://pixabay.com/users/kejamy-14838717/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4756360">Olga</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4756360">Pixabay</a> -->
-                        </picture>
+                        <h3>Category 1</h3>
                     </li>
                     <li id="grid2">
-                        <picture>
-                            <source media="(max-width:800px)" srcset="img/category2small.jpg">
-                            <img src="img/category2large.jpg" alt="bilde av katergori 2 katter"> <!-- Image by <a href="https://pixabay.com/users/chikilino-9126931/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7688749">Fabio</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7688749">Pixabay</a> -->
-                        </picture>
+                        <h3>Category 2</h3>
                     </li>
                     <li id="grid3">
-                        <picture>
-                            <source media="(max-width:800px)" srcset="img/category3small.jpg">
-                            <img src="img/category3large.jpg" alt="bilde av katergori 3 katter"> <!-- Image by <a href="https://pixabay.com/users/guvo59-9285194/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8032816">Gundula Vogel</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8032816">Pixabay</a> -->
-                        </picture>
+                        <h3>Category 3</h3>
                     </li>
                     <li id="grid4">
-                        <picture>
-                            <source media="(max-width:800px)" srcset="img/category4small.jpg">
-                            <img src="img/category4large.jpg" alt="bilde av katergori 4 katter"> <!-- Image by <a href="https://pixabay.com/users/melanimarfeld-7353531/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6638652">Melani Marfeld</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6638652">Pixabay</a> -->
-                        </picture>
+                        <h3>Category 4</h3>
                     </li>
                     <li id="grid5">
-                        <picture>
-                            <source media="(max-width:800px)" srcset="img/category5small.jpg">
-                            <img src="img/category5large.jpg" alt="bilde av katergori 5 katter"> <!-- Image by <a href="https://pixabay.com/users/kirgiz03-6995361/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2934720">Юрий Сидоренко</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2934720">Pixabay</a> -->
-                        </picture>
+                        <h3>Category 5</h3>
                     </li>
                 </ul>
             </section>
             <section>
                 <h2>Anmeldelser</h2>
+                <div class="reviewbox"> <!-- bruker div for en kontainer for bedre kontrol av flex -->
                 <article class="review">
                     <h3>Katten Katy</h3>
-                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet. Mauris accumsan, ipsum id maximus blandit, augue neque sollicitudin massa, sit amet consequat diam ipsum ac erat.</p>
+                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet.</p>
                     <picture>
                         <source media="(max-width:800px)" srcset="img/catpfp356.jpg"> <!-- Image by <a href="https://pixabay.com/users/uschi2807-1481642/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Uschi Leonhartsberger-Schrott</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Pixabay</a> -->
                         <img src="img/catpfp.jpg" alt="profile picture">
@@ -145,7 +186,7 @@
                 </article>
                 <article class="review">
                     <h3>Katten Katy</h3>
-                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet. Mauris accumsan, ipsum id maximus blandit, augue neque sollicitudin massa, sit amet consequat diam ipsum ac erat.</p>
+                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet.</p>
                     <picture>
                         <source media="(max-width:800px)" srcset="img/catpfp356.jpg"> <!-- Image by <a href="https://pixabay.com/users/uschi2807-1481642/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Uschi Leonhartsberger-Schrott</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Pixabay</a> -->
                         <img src="img/catpfp.jpg" alt="profile picture">
@@ -153,7 +194,7 @@
                 </article>
                 <article class="review">
                     <h3>Katten Katy</h3>
-                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet. Mauris accumsan, ipsum id maximus blandit, augue neque sollicitudin massa, sit amet consequat diam ipsum ac erat.</p>
+                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet.</p>
                     <picture>
                         <source media="(max-width:800px)" srcset="img/catpfp356.jpg"> <!-- Image by <a href="https://pixabay.com/users/uschi2807-1481642/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Uschi Leonhartsberger-Schrott</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Pixabay</a> -->
                         <img src="img/catpfp.jpg" alt="profile picture">
@@ -161,16 +202,48 @@
                 </article>
                 <article class="review">
                     <h3>Katten Katy</h3>
-                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet. Mauris accumsan, ipsum id maximus blandit, augue neque sollicitudin massa, sit amet consequat diam ipsum ac erat.</p>
+                    <p>Praesent in augue id mi egestas dignissim. Pellentesque id urna eu orci rhoncus viverra. Cras tincidunt, mauris sit amet porttitor vehicula, urna sapien lobortis massa, non luctus ipsum quam maximus ex. Pellentesque sit amet turpis id magna molestie aliquet.</p>
                     <picture>
                         <source media="(max-width:800px)" srcset="img/catpfp356.jpg"> <!-- Image by <a href="https://pixabay.com/users/uschi2807-1481642/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Uschi Leonhartsberger-Schrott</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7880879">Pixabay</a> -->
                         <img src="img/catpfp.jpg" alt="profile picture">
                     </picture>
                 </article>
+                </div>
             </section>
         </main>
         <footer id="bunn">
-
+            <section class="bunntext">
+                <h3 id="logof">Logo</h3>
+                <p>Pellentesque id urna eu orci rhoncus viverra.</p>
+            </section>
+            <section id="linker">
+                <article class="kontakt">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i><h4>Adresse: </h4><p>B R A Veien 4, 1757 Halden</p></li>
+                        <li><i class="fa-solid fa-phone"></i><h4>Telefon: </h4><p>69 60 80 00</p></li>
+                        <li><i class="fa-solid fa-envelope"></i><h4>E-post: </h4><p>halden@hiof.no</p></li>
+                        <li><i class="fa-solid fa-clock"></i><h4>Åpningstider: </h4><p>Stenger 15:00</p></li>
+                    </ul>
+                </article>
+                <article class="snarveier">
+                    <h3>Snarveier</h3>
+                        <ul>
+                            <li><a href="index.html#product">Produkter</a></li>
+                            <li><a href="index.html#kategorier">Kategorier</a></li>
+                            <li><a href="#bunn">Kontakt oss</a></li>
+                        </ul>
+                </article>
+                <article class="medier">
+                    <h3>Sosiale Medier</h3>
+                        <ul class="social">
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/?trk=Officekey"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                </article>
+            </section>
         </footer>
         <script>
             let togglemenu = ()=>{

@@ -12,19 +12,27 @@
     <body>
         <header id="top">
             <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
-            <nav class="flex_spaceb">
+            <nav>
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
                 <form>
                     <label for="search">Søk</label>
                     <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
                     <input type="submit" value="søk">
                 </form>
-                <ul class="flex_menu" id="menu"> 
+                <section id="menu">
+                <ul class="menu"> 
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="index.html#product">Produkter</a></li>
-                    <li><p id="logo">Logo</p></li>
+                    <li><a id="logo">Logo</a></li>
                     <li><a href="index.html#kategorier">Kategorier</a></li>
                     <li><a href="#bunn">Kontakt oss</a></li>
                 </ul>
+                <span id="ikoner" class="menu">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+                </section>
             </nav>
         </header>
     </body>
